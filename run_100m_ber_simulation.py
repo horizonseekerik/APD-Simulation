@@ -38,7 +38,7 @@ plt.rcParams.update({
     'grid.alpha': 0.5,
 })
 
-OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "..", "ofc_apd_paper_latex", "figures")
+OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "figures")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 class APDBERSimulator:
